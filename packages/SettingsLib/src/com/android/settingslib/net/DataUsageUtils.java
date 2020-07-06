@@ -43,7 +43,7 @@ public class DataUsageUtils {
                 telephonyManager.getSubscriberId(subId));
 
         if (!subscriptionManager.isActiveSubId(subId)) {
-            Log.i(TAG, "Subscription is not active: " + subId);
+            //Log.i(TAG, "Subscription is not active: " + subId);
             return mobileAll;
         }
 
