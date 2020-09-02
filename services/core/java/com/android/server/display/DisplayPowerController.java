@@ -1978,9 +1978,6 @@ final class DisplayPowerController implements AutomaticBrightnessController.Call
     }
 
     void setAutoBrightnessLoggingEnabled(boolean enabled) {
-        if (mAutomaticBrightnessController != null) {
-            mAutomaticBrightnessController.setLoggingEnabled(enabled);
-        }
     }
 
     @Override // DisplayWhiteBalanceController.Callbacks
@@ -1989,10 +1986,6 @@ final class DisplayPowerController implements AutomaticBrightnessController.Call
     }
 
     void setDisplayWhiteBalanceLoggingEnabled(boolean enabled) {
-        if (mDisplayWhiteBalanceController != null) {
-            mDisplayWhiteBalanceController.setLoggingEnabled(enabled);
-            mDisplayWhiteBalanceSettings.setLoggingEnabled(enabled);
-        }
     }
 
     void setAmbientColorTemperatureOverride(float cct) {
