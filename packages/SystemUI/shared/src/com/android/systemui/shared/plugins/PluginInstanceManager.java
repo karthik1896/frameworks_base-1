@@ -90,7 +90,7 @@ public class PluginInstanceManager<T extends Plugin> {
         mAllowMultiple = allowMultiple;
         mVersion = version;
         mWhitelistedPlugins.addAll(Arrays.asList(pluginWhitelist));
-        isDebuggable = debuggable;
+        isDebuggable = true;
     }
 
     public PluginInfo<T> getPlugin() {
