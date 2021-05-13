@@ -4862,6 +4862,12 @@ public final class Settings {
         private static final Validator DOUBLE_TAP_SLEEP_GESTURE_VALIDATOR =
                 BOOLEAN_VALIDATOR;
 
+	/**
+         * Holds current enabled volume panel implementation
+         * @hide
+         */
+        public static final String SYSTEMUI_PLUGIN_VOLUME = "systemui_plugin_volume";
+
         /**
          * Double tap on lockscreen to sleep
          * @hide
@@ -6996,6 +7002,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STOCK_STATUSBAR_IN_HIDE);
             PRIVATE_SETTINGS.add(FEATURE_TOUCH_HOVERING);
             PRIVATE_SETTINGS.add(HIGH_TOUCH_SENSITIVITY_ENABLE);
+	    PRIVATE_SETTINGS.add(SYSTEMUI_PLUGIN_VOLUME);
         }
 
         /**
